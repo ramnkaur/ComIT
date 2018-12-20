@@ -35,7 +35,7 @@ namespace SoftToys
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SoftToysContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SoftToysContext")));
